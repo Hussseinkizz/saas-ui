@@ -28,7 +28,7 @@ export function OrganizationDropdown() {
           foo
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56">
+      <DropdownMenuContent className="w-56 ml-4">
         <DropdownMenuLabel>Organizations</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>

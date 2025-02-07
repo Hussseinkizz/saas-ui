@@ -16,7 +16,6 @@
 @import "@fontsource/poppins/900.css";
 @import "@fontsource-variable/work-sans"; */
 
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -82,12 +81,15 @@
 
 @layer base {
   :root {
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    /* Increased contrast for sidebar accent */
+    --sidebar-accent: 240 4.8% 90.3%; /* Lighter background for active/hover state */
+    --sidebar-accent-foreground: 240 5.9% 10%; /* Darker text for better readability */
+
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
@@ -97,13 +99,15 @@
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 0 0% 98%;
     --sidebar-primary-foreground: 240 5.9% 10%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
+
+    /* Increased contrast for dark mode */
+    --sidebar-accent: 240 3.7% 25.9%; /* Slightly lighter background */
+    --sidebar-accent-foreground: 0 0% 98%; /* Bright white text */
+
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
-
 
 /* @layer base {
   * {
@@ -172,8 +176,8 @@ h5,
 }
 
 /* Disable Input Increment And Decrement Buttons */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }

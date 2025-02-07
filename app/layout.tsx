@@ -33,12 +33,9 @@ export default function RootLayout({
         <SidebarProvider defaultOpen>
           <div className="relative flex min-h-screen w-full">
             <AppSidebar />
-            <div className="flex w-full flex-1 flex-col">
-              <Header />
-              <main className="flex-1 w-full min-h-full bg-white shadow rounded-lg">
+              <main className="flex-1 w-full min-h-full bg-gray-50 shadow rounded-lg">
                 {children}
               </main>
-            </div>
           </div>
         </SidebarProvider>
       </body>
