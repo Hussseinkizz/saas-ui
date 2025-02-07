@@ -1,5 +1,5 @@
 'use client';
-import { Menu, Sidebar } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from './ui/button';
 import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa';
 import { useSidebar } from './ui/sidebar';
