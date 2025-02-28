@@ -70,16 +70,16 @@ export const ContactsTable = ({ filteredContacts, isMobile }: Props) => {
     }
   };
 
-  const getTypeColor = (type: string) => {
-    switch (type) {
-      case 'Lead':
-        return 'text-cyan-500 fill-cyan-500';
-      case 'Customer':
-        return 'text-purple-500 fill-purple-500';
-      default:
-        return 'text-gray-500 fill-gray-500';
-    }
-  };
+  // const getTypeColor = (type: string) => {
+  //   switch (type) {
+  //     case 'Lead':
+  //       return 'text-cyan-500 fill-cyan-500';
+  //     case 'Customer':
+  //       return 'text-purple-500 fill-purple-500';
+  //     default:
+  //       return 'text-gray-500 fill-gray-500';
+  //   }
+  // };
 
   const getInitials = (name: string) => {
     return name

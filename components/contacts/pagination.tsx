@@ -1,8 +1,5 @@
 import { Button } from '../ui/button';
-
-interface Props {}
-
-export const ContactsTablePagination = (props: Props) => {
+export const ContactsTablePagination = () => {
   return (
     <div className="flex items-center justify-between px-4 py-2 border-t">
       <div className="text-sm text-muted-foreground">
