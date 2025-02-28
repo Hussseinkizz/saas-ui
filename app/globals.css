@@ -291,9 +291,25 @@ html {
   background-color: transparent;
 }
 
-/* Specific Media Queries */
-@media screen and (min-width: 768px) {
-  .some-class {
-    display: none;
+/* Custom styles for sticky table */
+.sticky-table-container {
+  position: relative;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .sticky-column {
+    position: sticky;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+  }
+
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-color: white;
   }
 }
